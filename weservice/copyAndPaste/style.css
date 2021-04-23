@@ -1,0 +1,14 @@
+fieldset {
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+
+    height: 500px;
+}
+
+label, select, input, textarea {
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
