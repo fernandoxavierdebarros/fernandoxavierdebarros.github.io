@@ -18,29 +18,34 @@
 
             <legend>SAP CONCUR</legend>
 
-            <div>
-                <label>Tipo de Despesa</label>
-                <br>
-                <select name="" id="">
-                    <option value="" disabled selected class="" id="">Selecione o gasto...</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Estacionamento</option>
-                    <option value="">Material de escritório/Software</option>
-                    <option value="">Taxi</option>
-                    <option value="">Campanha de Vacinação</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Data da Transação</label>
-                <br>
-                <input type="date">
+            <div class="container">
+                <div>
+                    <label>Tipo de Despesa</label>
+                    <br>
+                    <select name="" id="">
+                        <option value="" disabled selected class="" id="">Selecione o gasto...</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Estacionamento</option>
+                        <option value="">Material de escritório/Software</option>
+                        <option value="">Taxi</option>
+                        <option value="">Campanha de Vacinação</option>
+                    </select>
+                    <input type="submit" value="copy">
+                </div>
+    
+                <div class="date">
+                    <label>Data da Transação</label>
+                    <br>
+                    <input type="date" id="date">
+                    <input type="submit" value="copy">
+                </div>
             </div>
 
             <div>
                 <label for="">Motivo</label>
                 <br>
                 <input type="text" placeholder="Atividade executada">
+                <!-- <input type="submit" value="copy"> -->
             </div>
 
             <div>
@@ -52,9 +57,9 @@
             <hr>
 
             <div>
-                <label for="">Uniorg</label>
+                <label for="" >Uniorg</label>
                 <br>
-                <input type="text" placeholder="">
+                <input type="number" placeholder="" id="uniorg" value="029-3456" autofocus>
             </div>
 
             <div>
@@ -64,15 +69,15 @@
             </div>
 
             <div>
-                <label for="">Cidade</label>
+                <label for="" >Cidade</label>
                 <br>
-                <input type="text" placeholder="">
+                <input type="text" placeholder="" id="city">
             </div>
 
             <div>
                 <label for="">Estado</label>
                 <br>
-                <input type="text" value="SP" placeholder="">
+                <input type="text" value="SP" placeholder="" id="state">
             </div>
 
             <div>

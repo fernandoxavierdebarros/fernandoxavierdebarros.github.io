@@ -1,7 +1,4 @@
 fieldset {
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
-
     height: 500px;
 }
 
@@ -11,4 +8,39 @@ label, select, input, textarea {
     margin-right: 0;
     margin-bottom: 10px;
 }
+
+input:not([type="date"],[type="submit"]) {
+    width: 400px;
+}
+
+
+
+input[type="date"]{
+    height: 22px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px !important;
+    background-color: royalblue;
+    flex-wrap: nowrap;
+}
+
+#date {
+    /*  */
+}
+
+#uniorg {
+    width: 120px;
+}
+
+#state {
+    width: 50px;
+}
+
+.date {
+    margin-left: 30px;
+}
+
 
