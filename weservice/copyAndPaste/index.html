@@ -7,83 +7,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="outline.css">
 
     <title>Copy And Paste We | SAP Concur</title>
-</head>
+<Lhead>
 
 <body>
     <div>
         <h1>Centro de Processamento de Dados We Service</h1>
+
         <fieldset>
 
             <legend>SAP CONCUR</legend>
 
-            <div class="container">
-                <div>
-                    <label>Tipo de Despesa</label>
+            <!-- CONTAINER -->
+            <div class="container black">  
+                
+                <div class="blue flex space-between"> <!-- Tipo de Despesa / Data da Transação -->
+                    <div class="red">
+
+                        <!-- Tipo de Despesa -->
+                        <label>Tipo de Despesa</label>
+                        <br>
+                        <select name="" id="">
+                            <option value="" disabled selected class="" id="">Selecione o gasto...</option>
+                            <option value="">Pedágio</option>
+                            <option value="">Estacionamento</option>
+                            <option value="">Material de escritório/Software</option>
+                            <option value="">Taxi</option>
+                            <!-- <option value="">Campanha de Vacinação</option> -->
+                        </select>
+                        <br>
+                        <input type="submit" value="copy">
+
+                    </div>
+        
+                    <!-- Data da Transação -->
+                    <div class="date yellow"> 
+                        <label>Data da Transação</label>
+                        <br>
+                        <input type="date" id="date">
+                        <br>
+                        <input type="submit" value="copy">
+                    </div>
+                </div>
+    
+                <div class="blue"><!-- Motivo -->
+                    <label for="">Motivo</label>
                     <br>
-                    <select name="" id="">
-                        <option value="" disabled selected class="" id="">Selecione o gasto...</option>
-                        <option value="">Pedágio</option>
-                        <option value="">Estacionamento</option>
-                        <option value="">Material de escritório/Software</option>
-                        <option value="">Taxi</option>
-                        <option value="">Campanha de Vacinação</option>
-                    </select>
+                    <input type="text" placeholder="Atividade executada">
+                    <br>
                     <input type="submit" value="copy">
                 </div>
     
-                <div class="date">
-                    <label>Data da Transação</label>
+                <div class="blue"> <!-- Fornecedor -->
+                    <label for="">Fornecedor</label>
                     <br>
-                    <input type="date" id="date">
-                    <input type="submit" value="copy">
+                    <input type="text" placeholder="Razão Social da Nota">
                 </div>
-            </div>
-
-            <div>
-                <label for="">Motivo</label>
-                <br>
-                <input type="text" placeholder="Atividade executada">
-                <!-- <input type="submit" value="copy"> -->
-            </div>
-
-            <div>
-                <label for="">Fornecedor</label>
-                <br>
-                <input type="text" placeholder="Razão Social da Nota">
-            </div>
-
-            <hr>
-
-            <div>
-                <label for="" >Uniorg</label>
-                <br>
-                <input type="number" placeholder="" id="uniorg" value="029-3456" autofocus>
-            </div>
-
-            <div>
-                <label for="">Endereço</label>
-                <br>
-                <input type="text" placeholder="Av, Rua, Logradouro...">
-            </div>
-
-            <div>
-                <label for="" >Cidade</label>
-                <br>
-                <input type="text" placeholder="" id="city">
-            </div>
-
-            <div>
-                <label for="">Estado</label>
-                <br>
-                <input type="text" value="SP" placeholder="" id="state">
-            </div>
-
-            <div>
-                <label for="">Comentário</label>
-                <br>
-                <textarea name="" id="" cols="60" rows="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem? Ipsam adipisci quaerat veritatis natus id doloremque consequuntur labore facilis. Officia sapiente possimus velit aspernatur explicabo nulla sunt voluptatum odio!</textarea>
+    
+                <hr>
+    
+                <div class="blue"> <!-- Uniorg -->
+                    <label for="" >Uniorg</label>
+                    <br>
+                    <input type="number" placeholder="" id="uniorg" value="029-3456" autofocus>
+                </div>
+    
+                <div class="blue"> <!-- Endereço -->
+                    <label for="">Endereço</label>
+                    <br>
+                    <input type="text" placeholder="Av, Rua, Logradouro...">
+                </div>
+    
+                <div class="blue"> <!-- Cidade -->
+                    <label for="" >Cidade</label>
+                    <br>
+                    <input type="text" placeholder="" id="city">
+                </div>
+    
+                <div class="blue"> <!-- Estado -->
+                    <label for="">Estado</label>
+                    <br>
+                    <input type="text" value="SP" placeholder="" id="state">
+                </div>
+    
+                <div class="blue"> <!-- Comentário -->
+                    <label for="">Comentário</label>
+                    <br>
+                    <textarea name="" id="" cols="60" rows="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem? Ipsam adipisci quaerat veritatis natus id doloremque consequuntur labore facilis. Officia sapiente possimus velit aspernatur explicabo nulla sunt voluptatum odio!</textarea>
+                </div>
             </div>
 
         </fieldset>
