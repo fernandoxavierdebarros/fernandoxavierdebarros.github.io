@@ -1,7 +1,18 @@
 
 .black {
-    /* background-color: black; */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-content: space-between; */
+}
+
+.black div:last-child {
+    /* display: flex; */
+    /* float: right; */
+    /* box-shadow: 5px 5px salmon; */
 }
 
 .blue {
@@ -22,6 +33,10 @@
 .red {
     border: 1px solid red;
     background-color: rgba(255, 0, 0, 0.400);
+}
+
+.purple {
+    background-color: indigo;
 }
 
 

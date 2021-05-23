@@ -10,20 +10,22 @@
     <link rel="stylesheet" href="outline.css">
 
     <title>Copy And Paste We | SAP Concur</title>
-<Lhead>
+</head>
 
 <body>
-    <div>
+
+    <div class="container">
         <h1>Centro de Processamento de Dados We Service</h1>
 
-        <fieldset>
+        <fieldset class="purple">
 
             <legend>SAP CONCUR</legend>
 
             <!-- CONTAINER -->
-            <div class="container black">  
+            <div class="block black">  
                 
                 <div class="blue flex space-between"> <!-- Tipo de Despesa / Data da Transação -->
+
                     <div class="red">
 
                         <!-- Tipo de Despesa -->
@@ -38,32 +40,39 @@
                             <!-- <option value="">Campanha de Vacinação</option> -->
                         </select>
                         <br>
-                        <input type="submit" value="copy">
+                        <!-- <input type="submit" value="copy"> -->
+                        <button type="submit">copy</button>
 
                     </div>
-        
+
                     <!-- Data da Transação -->
                     <div class="date yellow"> 
                         <label>Data da Transação</label>
                         <br>
                         <input type="date" id="date">
                         <br>
-                        <input type="submit" value="copy">
+                        <!-- <input type="submit" value="copy"> -->
+                        <button type="submit">copy</button>
                     </div>
+
                 </div>
-    
+
                 <div class="blue"><!-- Motivo -->
                     <label for="">Motivo</label>
                     <br>
                     <input type="text" placeholder="Atividade executada">
-                    <br>
-                    <input type="submit" value="copy">
+                    <!-- <br> -->
+                    <!-- <input type="submit" value="copy"> -->
+                    <button type="submit">copy</button>
                 </div>
     
                 <div class="blue"> <!-- Fornecedor -->
                     <label for="">Fornecedor</label>
                     <br>
                     <input type="text" placeholder="Razão Social da Nota">
+                    <!-- <br> -->
+                    <!-- <input type="submit" value="&#128269;"> -->
+                    <button type="submit">copy</button>
                 </div>
     
                 <hr>
@@ -71,35 +80,57 @@
                 <div class="blue"> <!-- Uniorg -->
                     <label for="" >Uniorg</label>
                     <br>
-                    <input type="number" placeholder="" id="uniorg" value="029-3456" autofocus>
+                    <input type="text" placeholder="###-####" id="uniorg" value="029-3456" autofocus>
+                    <button type="submit">copy</button>
                 </div>
     
                 <div class="blue"> <!-- Endereço -->
                     <label for="">Endereço</label>
                     <br>
                     <input type="text" placeholder="Av, Rua, Logradouro...">
+                    <button type="submit">copy</button>
                 </div>
     
                 <div class="blue"> <!-- Cidade -->
                     <label for="" >Cidade</label>
                     <br>
                     <input type="text" placeholder="" id="city">
+                    <button type="submit">copy</button>
                 </div>
-    
+
                 <div class="blue"> <!-- Estado -->
                     <label for="">Estado</label>
                     <br>
                     <input type="text" value="SP" placeholder="" id="state">
+                    <button type="submit">copy</button>
                 </div>
-    
-                <div class="blue"> <!-- Comentário -->
-                    <label for="">Comentário</label>
-                    <br>
-                    <textarea name="" id="" cols="60" rows="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem? Ipsam adipisci quaerat veritatis natus id doloremque consequuntur labore facilis. Officia sapiente possimus velit aspernatur explicabo nulla sunt voluptatum odio!</textarea>
-                </div>
+
+            </div>
+
+            <!-- VERTICAL -->
+            <div class="vertical"></div>
+
+            <div class="blue"> <!-- Comentário -->
+                <label for="">Comentário</label>
+                <br>
+                <textarea name="" id="" cols="60" rows="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem? Ipsam adipisci quaerat veritatis natus id doloremque consequuntur labore facilis. Officia sapiente possimus velit aspernatur explicabo nulla sunt voluptatum odio!</textarea>
+                <br>
+                <button type="submit">copy</button>
             </div>
 
         </fieldset>
+
+        <div class="blue">
+            <footer>
+                <span>
+                    &copy copyright 2021 | Fernando Barros
+                </span>
+                <br>
+                <span>
+                    São Paulo, Brasil
+                </span>
+            </footer>
+        </div>
     </div>
 </body>
 

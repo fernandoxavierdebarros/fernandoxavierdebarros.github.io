@@ -1,5 +1,16 @@
+html {
+    color: silver;
+    background-color: black;
+}
+
+body {
+    background-color: cadetblue;
+}
+
 fieldset {
-    /* height: 500px; */
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
 }
 
 label, select, input, textarea {
@@ -10,27 +21,38 @@ label, select, input, textarea {
 }
 
 input:not([type="date"],[type="submit"]) {
-    /* width: 400px; */
+    /* width: 443px; */
 }
 
 input[type="date"]{
     /* height: 16px; */
 }
 
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    width: 500px !important;
-    background-color: royalblue;
-    flex-wrap: nowrap;
-} */
+hr {
+    /* margin: 0; */
+    /* padding: 0; */
+    width: 100%;
+
+}
 
 .container {
+    /* width: 200px; */
+    /* background-color: #00FF00; */
+}
+
+.block {
     /* display: flex; */
     /* flex-flow: column; */
     width: 500px;
     /* max-width: 650px; */
     /* min-width: 650px; */
+}
+
+.vertical {
+    /* height: 10px; */
+    /* width: 10px; */
+    border: 2px solid orange;
+    border-radius: 30%;
 }
 
 
