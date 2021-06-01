@@ -1,0 +1,57 @@
+html {
+    color: silver;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: magenta;
+}
+
+fieldset {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label, select, input, textarea {
+    /* margin-top: 0; */
+    /* margin-left: 50px; */
+    /* margin-right: 0; */
+    /* margin-bottom: 10px; */
+}
+
+input:not([type="date"],[type="submit"]) {
+    /* width: 443px; */
+}
+
+input[type="date"]{
+    /* height: 16px; */
+}
+
+hr {
+    /* margin: 0; */
+    /* padding: 0; */
+    width: 100%;
+}
+
+.container {
+    /* min-width: 800px; */
+    /* background-color: #00FF00; */
+}
+
+.block {
+    /* display: flex; */
+    /* flex-flow: column; */
+    width: 500px;
+    /* max-width: 650px; */
+    /* min-width: 650px; */
+}
+
+.vertical {
+    /* height: 10px; */
+    /* width: 10px; */
+    border: 2px solid orange;
+    border-radius: 30%;
+}
+

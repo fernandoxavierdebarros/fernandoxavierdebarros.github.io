@@ -2,18 +2,23 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="outline.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outline.css">
+
+    <script src="js/engine.js" async></script>
 
     <title>Copy And Paste We | SAP Concur</title>
+
 </head>
 
 <body>
 
+    <!-- CONTAINER -->
     <div class="container">
         <h1>Centro de Processamento de Dados We Service</h1>
 
@@ -21,84 +26,101 @@
 
             <legend>SAP CONCUR</legend>
 
-            <!-- CONTAINER -->
-            <div class="block black">  
-                
-                <div class="blue flex space-between"> <!-- Tipo de Despesa / Data da Transação -->
+            <!-- BLOCK -->
+            <div class="block black">
 
+                <!-- Tipo de Despesa / Data da Transação -->
+                <div class="blue flex space-between">
+
+                    <!-- Tipo de Despesa -->
                     <div class="red">
-
-                        <!-- Tipo de Despesa -->
                         <label>Tipo de Despesa</label>
                         <br>
-                        <select name="" id="">
-                            <option value="" disabled selected class="" id="">Selecione o gasto...</option>
-                            <option value="">Pedágio</option>
-                            <option value="">Estacionamento</option>
-                            <option value="">Material de escritório/Software</option>
-                            <option value="">Taxi</option>
-                            <!-- <option value="">Campanha de Vacinação</option> -->
+
+                        <select name="" id="expense" class="expense" onchange="handle(this)">
+                            <option disabled selected class="" id="">Selecione o gasto...</option>
+                            <option value="toll" size="2">Pedágio</option>
+                            <option value="park">Estacionamento</option>
+                            <option value="OfficeSupplies">Material de escritório/Software</option>
+                            <option value="taxi">Taxi</option>
+                            <!-- <option lang="ko" value="teste">(Coreia)</option> -->
                         </select>
+
                         <br>
-                        <!-- <input type="submit" value="copy"> -->
                         <button type="submit">copy</button>
 
                     </div>
 
                     <!-- Data da Transação -->
-                    <div class="date yellow"> 
+                    <div class="date yellow">
                         <label>Data da Transação</label>
                         <br>
                         <input type="date" id="date">
                         <br>
-                        <!-- <input type="submit" value="copy"> -->
                         <button type="submit">copy</button>
                     </div>
 
                 </div>
 
-                <div class="blue"><!-- Motivo -->
+                <!-- Motivo -->
+                <div class="blue">
                     <label for="">Motivo</label>
                     <br>
-                    <input type="text" placeholder="Atividade executada">
+                    <!-- <input type="text" placeholder="Atividade executada"> -->
+                    <select name="" id="rex">
+                        <option disabled selected class="" id="">Selecione o tipo de serviço...
+                        <option value="survey">Visita Técnica Santander (Vistoria)
+                        <option value="installation">Visita Técnica Santander (Instalação)
+                        <option value="survey&Install">Visita Técnica Santander (Vistoria & Instalação)
+                        <option value="install&DayAfter">Visita Técnica Santander (Instalação & Day After)
+                        <option value="dayAfter">Visita Técnica Santander (Day After)
+                        <option value="equipmentCollection">Visita Técnica Santander (Coleta de equipamento)
+                        <option value="integration">Visita Técnica Santander (Integração)
+                        <option value="integration&Survey">Visita Técnica Santander (Integração & Vistoria)
+                        <option value="endOfActivities">Atividades Finalizadas;
+
+                    </select>
                     <!-- <br> -->
-                    <!-- <input type="submit" value="copy"> -->
-                    <button type="submit">copy</button>
+                    <button type="submit" onclick="copy(document.querySelector('#rex'))">copy</button>
                 </div>
-    
-                <div class="blue"> <!-- Fornecedor -->
+
+                <!-- Fornecedor -->
+                <div class="blue">
                     <label for="">Fornecedor</label>
                     <br>
                     <input type="text" placeholder="Razão Social da Nota">
                     <!-- <br> -->
-                    <!-- <input type="submit" value="&#128269;"> -->
                     <button type="submit">copy</button>
                 </div>
-    
+
                 <hr>
-    
-                <div class="blue"> <!-- Uniorg -->
-                    <label for="" >Uniorg</label>
+
+                <!-- Uniorg -->
+                <div class="blue">
+                    <label for="">Uniorg</label>
                     <br>
                     <input type="text" placeholder="###-####" id="uniorg" value="029-3456" autofocus>
                     <button type="submit">copy</button>
                 </div>
-    
-                <div class="blue"> <!-- Endereço -->
+
+                <!-- Endereço -->
+                <div class="blue">
                     <label for="">Endereço</label>
                     <br>
                     <input type="text" placeholder="Av, Rua, Logradouro...">
                     <button type="submit">copy</button>
                 </div>
-    
-                <div class="blue"> <!-- Cidade -->
-                    <label for="" >Cidade</label>
+
+                <!-- Cidade -->
+                <div class="blue">
+                    <label for="">Cidade</label>
                     <br>
                     <input type="text" placeholder="" id="city">
                     <button type="submit">copy</button>
                 </div>
 
-                <div class="blue"> <!-- Estado -->
+                <!-- Estado -->
+                <div class="blue">
                     <label for="">Estado</label>
                     <br>
                     <input type="text" value="SP" placeholder="" id="state">
@@ -110,16 +132,21 @@
             <!-- VERTICAL -->
             <div class="vertical"></div>
 
-            <div class="blue"> <!-- Comentário -->
-                <label for="">Comentário</label>
-                <br>
-                <textarea name="" id="" cols="60" rows="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem? Ipsam adipisci quaerat veritatis natus id doloremque consequuntur labore facilis. Officia sapiente possimus velit aspernatur explicabo nulla sunt voluptatum odio!</textarea>
-                <br>
-                <button type="submit">copy</button>
+            <!-- Comentário -->
+            <div class="block black">
+                <div class="blue">
+                    <label for="">Comentário</label>
+                    <br>
+                    <textarea name="" id="" cols="60"
+                        rows="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem? Ipsam adipisci quaerat veritatis natus id doloremque consequuntur labore facilis. Officia sapiente possimus velit aspernatur explicabo nulla sunt voluptatum odio!</textarea>
+                    <br>
+                    <button type="submit">copy</button>
+                </div>
             </div>
 
         </fieldset>
 
+        <!-- FOOTER -->
         <div class="blue">
             <footer>
                 <span>
@@ -132,6 +159,7 @@
             </footer>
         </div>
     </div>
+
 </body>
 
 </html>

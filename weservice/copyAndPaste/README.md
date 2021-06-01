@@ -2,36 +2,34 @@
 # COPY AND PASTE
 #### by Fernando Barros
 
-> Hello World!
-> - [] Theme (Clear, Dark, Matrix (or System), Default (WeService))
-> - [] Language (Portuguese, English, Spanish)
-> - [] ...
+
+
+#### Items
+
+> - [ ] Theme (Clear, Dark, Matrix (or System), Default (WeService))
+> - [ ] Language (Portuguese, English, Spanish)
+> - [x] Separate the elements by document
+> - [ ] Images
+> - [] JSON Data
+> - [ ] Database
+> - [x] Progress Bar
+> - [ ] Cursor
+> - [ ] Responsivity
+> - [ ] Style input border
+> - [ ] Style Select | Option border
+> - [ ] Information (Cost Center)
+> - [ ] ...
 
 #### The Fonts
-> - [] 
+> - [] ...
 
 
 #### The Buttons
 > - [] Effect by clicking
 
 
+> - [ ] 
+
+________________________________________________________________________________________
 
 
-
-...
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
