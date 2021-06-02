@@ -30,6 +30,8 @@ function handle(target, callback) {
 
     console.log(target.options[i].text)
 
+    return callback("Hello World!!!!!")
+
 }
 
 function copy(target) {
@@ -37,3 +39,6 @@ function copy(target) {
     console.log(target.options[i].text)
     // code here...
 }
+
+// Botão e select deu certo!
+// Falta tratar os valores e coletar os resultados (usar callback pra isso).
